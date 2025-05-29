@@ -50,15 +50,45 @@
 
     function ordenarPacientesConBubble($arr, $criterio){
         if(count($arr) <= 1 ) return "Dame un array con cositas para ordenar.";
-
         for($i = 0; $i < count($arr); $i++){
 
             for($j = 0; $j < count($arr) -1 ; $j++ ){
-                //ACA VA LA SOLUCION
+                if($criterio == "turno"){
+                    if($arr[$j][$criterio] > $arr[$j+1][$criterio]){
+                        $aux = $arr[$j];
+                        $arr[$j] = $arr[$j+1];
+                        $arr[$j+1] = $aux;
+                    }
+                }               
             }
         }
+        return $arr;
     }
 
+    $listaPacientes = [
+        [
+            "nombre" => "Juan Perez",
+            "turno" => 3,
+            "gravedad" => 2
+        ],
+        [
+            "nombre" => "Ana Gomez",
+            "turno" => 1,
+            "gravedad" => 3
+        ],
+        [
+            "nombre" => "Luis Torres",
+            "turno" => 2,
+            "gravedad" => 1
+        ]
+    ];
+    // Ordenar por turno
+    // Se ordena de numero menos a mayor.
+    $listaOrdenada = ordenarPacientesConBubble($listaPacientes, "turno");
+    print_r($listaOrdenada);
+
+
+    
     function ordenarPacientesConInsertion($arr, $criterio){
         if(count($arr) <= 1 ) return "Dame un array con cositas para ordenar.";
 
