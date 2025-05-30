@@ -10,17 +10,17 @@
         [
          {
             "nombre": "Juan Perez",
-            "criterio": 3,
+            "turno": 3,
             "gravedad": 2
         },
         {
             "nombre": "Ana Gomez",
-            "criterio": 1,
+            "turno": 1,
             "gravedad": 3
         },
         {
             "nombre": "Luis Torres",
-            "criterio": 2,
+            "turno": 2,
             "gravedad": 1
         }
         ]
@@ -30,17 +30,17 @@
         [
             {
                 "nombre": "Ana Gomez",
-                "criterio": 1,
+                "turno": 1,
                 "gravedad": 3
             },
             {
                 "nombre": "Luis Torres",
-                "criterio": 2,
+                "turno": 2,
                 "gravedad": 1
             },
             {
                 "nombre": "Juan Perez",
-                "criterio": 3,
+                "turno": 3,
                 "gravedad": 2
             }
         ]
