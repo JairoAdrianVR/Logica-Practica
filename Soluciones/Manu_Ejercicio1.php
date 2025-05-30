@@ -86,10 +86,9 @@ $resultadoBubble = ordenarPacientesConBubble($pacientes, "turno");
 // Ejemplo por gravedad usando Insertion Sort
 $resultadoInsertion = ordenarPacientesConInsertion($pacientes, "gravedad");
 
-echo "<pre>Bubble Sort por turno:\n";
+echo "Bubble Sort por turno:\n";
 print_r($resultadoBubble);
 
 echo "\nInsertion Sort por gravedad:\n";
 print_r($resultadoInsertion);
-echo "</pre>";
 ?>
