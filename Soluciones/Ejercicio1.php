@@ -53,7 +53,7 @@
         for($i = 0; $i < count($arr); $i++){
 
             for($j = 0; $j < count($arr) -1 ; $j++ ){
-                if($criterio == "turno"){
+                if($criterio === "turno" || $criterio === "gravedad"){
                     if($arr[$j][$criterio] > $arr[$j+1][$criterio]){
                         $aux = $arr[$j];
                         $arr[$j] = $arr[$j+1];
